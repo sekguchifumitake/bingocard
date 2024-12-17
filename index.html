@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+        <head>
+                <meta charset="utf-8">
+                <title>bingo-game</title>
+
+                <meta   
+                        name="viewport"
+                        content="width=device-width"
+                />
+                <link rel="stylesheet" href="./css/style.css">
+
+                <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                <script src="./js/main.js"></script>
+        </head>
+        <body>
+                <h1 id="aa">Bingo Game</h1>
+
+                <button id="reGenerate01btn" class="yoko" >カード再生成</button>
+                <input type="text"inputmode="numeric" id="textbox" class ="yoko"></input>
+                <button id="researchNumberBtn" class="yoko" >数字検索</button>
+
+                <table id="bingoTable"></table>
+
+                <div id="myModal" class="modal">
+                        <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>ビンゴ</p>
+                        </div>
+                </div>
+
+                <div id="NoNumber" class="modal">
+                        <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>数字無し</p>
+                        </div>
+                </div>
+        
+        </body>
+
+</html>

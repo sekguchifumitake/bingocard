@@ -1,0 +1,89 @@
+.allContents {
+  display: flex;
+}
+body 
+{
+  background-color: #FFFFFF;
+}
+
+#bingoTable {
+  width:350px; /* 表の幅 */
+  height: 350px; /* 表の高さ */
+  /* 中央揃えにする */
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.cellClass{
+  color: #64bfd3;
+  background-color: #FFFFFF;
+  font-weight: bold;
+  font-weight: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 35px; /* セルの幅を70ピクセルに設定 */
+  height: 35px; /* セルの高さを70ピクセルに設定 */
+}
+.yoko
+{
+  display: inline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* PC時 */
+@media screen and (min-width: 767px) {
+  /*ウィンドウ幅が767px以上の場合に適用*/
+}
+
+/* タブレット用 */
+@media screen and (max-width: 767px) {
+  /*ウィンドウ幅が最大767pxまでの場合に適用*/
+}
+
+/* スマホ用 */
+@media screen and (max-width: 479px) {
+  /*ウィンドウ幅が最大479pxまでの場合に適用*/
+  .allContents {
+    display: block;
+  }
+}
